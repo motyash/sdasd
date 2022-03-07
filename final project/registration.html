@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>REGISTRATION PAGE</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="css\css.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="registrationn.js"></script>
+<link rel="icon" href="favicon (1).ico">
+</head>
+<style>
+  body{
+    background-image: url("https://7themes.su/_ph/63/545542776.png");
+  }
+</style>
+<body>
+    <div class="icon-bar">
+        <a class="active" href="home.html"><i class="fa fa-home"></i></a> 
+        <a href="main.html"><i class="fa fa-search"></i></a> 
+        <a href="https://twitter.com/otmenyamba"><i class="fab fa-twitter"></i></a> 
+        <a href="https://github.com/AzamatYessimkhanily"><i class="fab fa-github"></i></a>
+        <a href="registration.html"><i class="fas fa-address-card"></i></a> 
+      </div>
+      <div class="container">
+        <div class="main">
+        <form class="form" method="post" action="#">
+        <h2 class="aza">Registration</h2>
+        <label class="aza">Name</label>
+        <input type="text" name="dname" id="name">
+        <label class="aza">Email</label>
+        <input type="text" name="demail" id="email">
+        <label class="aza">Password</label>
+        <input type="password" name="password" id="password">
+        <label class="aza">Confirm Password</label>
+        <input type="password" name="cpassword" id="cpassword">
+        <input type="button" name="register" id="register" value="Enter">
+        </form>
+        </div>
+        <script>
+          document.getElementById("name").addEventListener("keypress", myFunction);
+          
+          function myFunction() {
+            document.getElementById("name").style.backgroundColor = "red";
+          }
+          </script>
+            <script>
+              document.getElementById("email").addEventListener("keypress", myFunction);
+              
+              function myFunction() {
+                document.getElementById("email").style.backgroundColor = "green";
+              }
+              </script>
+              <script>
+
+function animate({duration, draw, timing}) {
+
+  let start = performance.now();
+
+  requestAnimationFrame(function animate(time) {
+    let timeFraction = (time - start) / duration;
+    if (timeFraction > 1) timeFraction = 1;
+
+    let progress = timing(timeFraction)
+
+    draw(progress);
+
+    if (timeFraction < 1) {
+      requestAnimationFrame(animate);}});}
+</script>
+<progress id="elem"></progress>
+<script>
+    elem.onclick = function() {
+      animate({
+        duration: 1000,
+        timing: function(timeFraction) {
+          return timeFraction;
+        },
+        draw: function(progress) {
+          elem.style.width = progress * 107 + '%';
+        }
+      });
+    };
+  </script>
+
+
+</body>
+
+</html>
+
+
+
+
+        </body>
+        </html>
